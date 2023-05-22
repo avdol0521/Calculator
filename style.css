@@ -21,7 +21,7 @@
 .text {
     grid-column: span 4;
     text-align: right;
-    color: wheat;
+    color: #F5DEB3;
 }
 .child {
     padding: 5px;
