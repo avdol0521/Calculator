@@ -30,6 +30,12 @@
     border: none;
     background-color: #1e1b1b;
     box-shadow: -3px -3px 5px rgba(225, 225, 225, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: color 0.4s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+}
+.child:hover {
+    color: #65a0ff;
+    transform: scale(1.05);
 }
 button {
     color: #F5DEB3;
