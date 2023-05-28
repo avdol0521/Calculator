@@ -16,7 +16,7 @@
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    gap: 10px;
 }
 .text {
     grid-column: span 4;
@@ -29,6 +29,7 @@
     border-radius: 10px;
     border: none;
     background-color: #1e1b1b;
+    box-shadow: -3px -3px 5px rgba(225, 225, 225, 0.1), 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
 button {
     color: #F5DEB3;
