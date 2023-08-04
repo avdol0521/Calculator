@@ -13,23 +13,23 @@
             <input type="text" class="text child" id="display">
             <button class="child clear" onclick="clearDisplay()">AC</button>
             <button class="child clear" onclick="removeLastCharacter()">C</button>
-            <button class="child operator" onclick="displayUpdate('/')">/</button>
-            <button class="child operator" onclick="displayUpdate('*')">*</button>
-            <button class="child" onclick="displayUpdate(1)">1</button>
-            <button class="child" onclick="displayUpdate(2)">2</button>
-            <button class="child" onclick="displayUpdate(3)">3</button>
-            <button class="child operator" onclick="displayUpdate('-')">-</button>
-            <button class="child" onclick="displayUpdate(4)">4</button>
-            <button class="child" onclick="displayUpdate(5)">5</button>
-            <button class="child" onclick="displayUpdate(6)">6</button>
-            <button class="child operator" onclick="displayUpdate('+')">+</button>
-            <button class="child" onclick="displayUpdate(7)">7</button>
-            <button class="child" onclick="displayUpdate(8)">8</button>
-            <button class="child" onclick="displayUpdate(9)">9</button>
-            <button class="child operator" onclick="displayUpdate('.')">.</button>
-            <button class="child operator" onclick="displayUpdate('\(')">(</button>
-            <button class="child" onclick="displayUpdate(0)">0</button>
-            <button class="child operator" onclick="displayUpdate('\)')">)</button>
+            <button class="child operator" onclick="operatorcaller('/')">/</button>
+            <button class="child operator" onclick="operatorcaller('*')">*</button>
+            <button class="child" onclick="numbercaller(1)">1</button>
+            <button class="child" onclick="numbercaller(2)">2</button>
+            <button class="child" onclick="numbercaller(3)">3</button>
+            <button class="child operator" onclick="operatorcaller('-')">-</button>
+            <button class="child" onclick="numbercaller(4)">4</button>
+            <button class="child" onclick="numbercaller(5)">5</button>
+            <button class="child" onclick="numbercaller(6)">6</button>
+            <button class="child operator" onclick="operatorcaller('+')">+</button>
+            <button class="child" onclick="numbercaller(7)">7</button>
+            <button class="child" onclick="numbercaller(8)">8</button>
+            <button class="child" onclick="numbercaller(9)">9</button>
+            <button class="child operator" onclick="operatorcaller('.')">.</button>
+            <button class="child operator" onclick="operatorcaller('\(')">(</button>
+            <button class="child" onclick="numbercaller(0)">0</button>
+            <button class="child operator" onclick="operatorcaller('\)')">)</button>
             <button class="child equal" onclick="giveResult()">=</button>
         </div>
     </div>
