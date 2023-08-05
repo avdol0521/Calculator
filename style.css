@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Minecraft', sans-serif;
 }
 .containercontainer {
     height: 100vh;
@@ -17,6 +17,7 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    font-family: 'Minecraft', sans-serif;
 }
 .text {
     grid-column: span 4;
