@@ -1,6 +1,7 @@
 const display = document.getElementById("display");
 let currentval = "";
 let standby = "";
+let standbyLastValue = standby.charAt(standby.length - 1);
 let isEvalSuccessful = false;
 const allowedValues = ['*', '(', ')', '/', '+', '-', '.'];
 const numbercaller = (value) => {
@@ -13,7 +14,7 @@ const numbercaller = (value) => {
 }
 const operatorcaller = (value) => {
     let currentLastValue = currentval.charAt(currentval.length - 1);
-    let standbyLastValue = standby.charAt(standby.length - 1);
+    standbyLastValue = standby.charAt(standby.length - 1);
     if (allowedValues.includes(standbyLastValue) && currentval === "") {
         return;
     } else {
@@ -40,6 +41,7 @@ const removeLastCharacter = () => {
     }
     const currentValue = display.value;
     display.value = currentValue.slice(0, -1);
+    standbyLastValue = standbyLastValue.slice(0, -1);
 }
 const giveResult = () => {
     try {
