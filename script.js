@@ -35,6 +35,9 @@ const clearDisplay = () => {
     standby = "";
 };
 const removeLastCharacter = () => {
+    if (display.value === "Syntax Error :(") {
+        display.value = "";
+    }
     const currentValue = display.value;
     display.value = currentValue.slice(0, -1);
 }
